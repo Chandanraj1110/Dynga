@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.Set;
 
 
 public class Register {
@@ -12,7 +13,7 @@ public class Register {
 
         // Maximize the window
        driver.manage().window().maximize();
-        driver.get("https://qa.dynga.io/register");
+       driver.get("https://qa.dynga.io/register");
         driver.findElement(By.xpath("//*[@id=\"firstName\"]")).sendKeys("Chandan");
         driver.findElement(By.xpath("//*[@id=\"lastName\"]")).sendKeys("Kumar");
         driver.findElement(By.xpath("//*[@id=\"mail\"]")).sendKeys("rajchandan1110@gmail.com");
@@ -37,7 +38,7 @@ public class Register {
         driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/button")).click();
 
 
-       /* driver.switchTo().newWindow(WindowType.TAB);
+      /*// driver.switchTo().newWindow(WindowType.TAB);
 
         driver.get("https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=ARZ0qKKYcu_fFKEaWW5VW0gZKfV-lni0eV5Gg1SrpwzSTKLOH_PB9XQgy4b0NENNv2dgzje_lCAmyA&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S620791311%3A1711456262849671&theme=mn&ddm=0");
         driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys("rajchandan1110@gmail.com");
