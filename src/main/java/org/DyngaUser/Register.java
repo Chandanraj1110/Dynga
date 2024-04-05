@@ -34,8 +34,9 @@ public class Register {
 
         driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/div/div[1]/div/div/form/div/div[9]/button")).click();
 
-        Thread.sleep(12000);
-        driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/button")).click();
+        Thread.sleep(15000);
+
+        driver.findElement(By.cssSelector("body > div.fade.common-modal.source_otp_modal.modal.show > div > div > div.modal-body > div > div > button")).click();
 
 
       /*// driver.switchTo().newWindow(WindowType.TAB);
