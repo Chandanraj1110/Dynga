@@ -1,4 +1,5 @@
 package org.DyngaUser;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
@@ -8,13 +9,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class Login {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main (String[]args) throws InterruptedException {
 
 
         WebDriver driver=new ChromeDriver();
 
         //Maximize the window
         driver.manage().window().maximize();
+
 
         // Open a webpage
         driver.get("https://qa.dynga.io");
@@ -23,7 +25,7 @@ Thread.sleep(3000);
 
         //Login page
         driver.findElement(By.xpath("//*[@id=\"mail\"]")).sendKeys("chandan.qa@antiersolutions.com");
-        driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("Admin@123");
+        driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("Admin@1234");
 
         Thread.sleep(3000);
 

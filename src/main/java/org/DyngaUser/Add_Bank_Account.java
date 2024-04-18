@@ -1,5 +1,6 @@
 package org.DyngaUser;
 
+import com.google.j2objc.annotations.LoopTranslation;
 import net.bytebuddy.implementation.bytecode.Throw;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -37,6 +38,7 @@ public class Add_Bank_Account {
         driver.switchTo().newWindow(WindowType.TAB);
         Thread.sleep(3000);
         driver.get("https://qa.dynga.io/auth/settings/settings-bank");
+
         Thread.sleep(3000);
         driver.findElement(By.xpath("//*[@id=\"root\"]/section/div[2]/div[2]/section/div/div/div/div[1]/a[3]")).click();
         Thread.sleep(1000);
@@ -44,7 +46,7 @@ public class Add_Bank_Account {
         Thread.sleep(1000);
         driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div/form/div[1]/div[1]/div/div/input")).sendKeys("Punjab national bank");
         Thread.sleep(1000);
-        driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div/form/div[1]/div[2]/div[1]/div/div/input")).sendKeys("458200010003");
+        driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div/form/div[1]/div[2]/div[1]/div/div/input")).sendKeys("451200010001");
         Thread.sleep(1000);
         driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div/form/div[1]/div[2]/div[2]/div/div/input")).sendKeys("PNB");
         Thread.sleep(1000);

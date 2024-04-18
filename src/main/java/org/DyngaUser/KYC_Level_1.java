@@ -63,16 +63,33 @@ public class KYC_Level_1 {
         driver.findElement(By.xpath("//*[@id=\"root\"]/section/div[2]/div[2]/section/div/div/div/div[2]/div/form/div[2]/div[3]/div[4]/div[2]/div/input")).sendKeys("140307");
         Thread.sleep(1000);
         driver.findElement(By.xpath("//*[@id=\"root\"]/section/div[2]/div[2]/section/div/div/div/div[2]/div/form/div[2]/div[3]/div[5]/div[2]/div/input")).sendKeys("Punjab");
-        Thread.sleep(1000);
+        Thread.sleep(3000);
         driver.findElement(By.xpath("//*[text() = \"Country\"]")).click();
-        Thread.sleep(1000);
+        Thread.sleep(3000);
         driver.findElement(By.xpath("//*[text() = \"Myanmar\"]")).click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
        driver.findElement(By.xpath("//*[@id=\"root\"]/section/div[2]/div[2]/section/div/div/div/div[2]/div/form/div[3]/div/button")).click();
        Thread.sleep(6000);
-       driver.findElement(By.xpath("//*[@id=\"uncontrolled-tab-example-tabpane-1\"]/div[2]/div/div/input")).sendKeys("5656656565656");
+       driver.findElement(By.xpath("//*[@id=\"uncontrolled-tab-example-tabpane-1\"]/div[2]/div/div/input")).sendKeys("5653058865656");
        Thread.sleep(2000);
        driver.findElement(By.xpath("//*[@id=\"uncontrolled-tab-example-tabpane-1\"]/div[2]/button")).click();
+       Thread.sleep(2000);
+       driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/div[1]/input[1]")).sendKeys("1");
+       Thread.sleep(1000);
+        driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/div[1]/input[2]")).sendKeys("1");
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/div[1]/input[3]")).sendKeys("1");
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/div[1]/input[4]")).sendKeys("1");
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/div[1]/input[5]")).sendKeys("1");
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/div[1]/input[6]")).sendKeys("1");
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/button")).click();
+
+
+
 
 
 

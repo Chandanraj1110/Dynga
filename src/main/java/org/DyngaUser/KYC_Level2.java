@@ -24,7 +24,7 @@ public class KYC_Level2 {
         Thread.sleep(3000);
 
         //Login page
-        driver.findElement(By.xpath("//*[@id=\"mail\"]")).sendKeys("rajchandan1110@gmail.com");
+        driver.findElement(By.xpath("//*[@id=\"mail\"]")).sendKeys("akhilkumar206095@gmail.com");
         driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("Admin@123");
 
         Thread.sleep(3000);
